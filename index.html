@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เปิดกล่อง</title>
+    <style>
+        /* สไตล์สำหรับกล่อง */
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #000;
+            background-color: lightblue;
+            display: none; /* ปิดกล่องเริ่มต้น */
+            padding: 20px;
+        }
+
+        /* เมื่อ checkbox ถูกเลือก ให้แสดงกล่อง */
+        #toggle:checked + .box {
+            display: block;
+        }
+
+        /* สไตล์สำหรับปุ่ม */
+        label {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        input[type="checkbox"] {
+            display: none; /* ซ่อน checkbox */
+        }
+    </style>
+</head>
+<body>
+    <h1>คลิกเพื่อเปิดกล่อง</h1>
+    
+    <!-- ใช้ checkbox สำหรับควบคุมการแสดงกล่อง -->
+    <input type="checkbox" id="toggle">
+    <label for="toggle">เปิด/ปิด กล่อง</label>
+    
+    <!-- กล่องที่จะเปิด -->
+    <div class="box">
+        <h2>นี่คือกล่อง</h2>
+        <p>คุณสามารถใส่ข้อความหรือข้อมูลเพิ่มเติมในกล่องนี้ได้</p>
+    </div>
+</body>
+</html>
