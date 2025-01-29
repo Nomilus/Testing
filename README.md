@@ -1,4 +1,4 @@
- START
+# START
     INPUT isMember
     INPUT payment
     IF isMember = TRUE
