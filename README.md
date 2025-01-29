@@ -1,13 +1,13 @@
 # START
-    INPUT isMember
-    INPUT payment
-    IF isMember = TRUE
-        INPUT timeYear
-        IF timeYear > 5
-            IF payment >= 50000
-                OUTPUT 15%
-            ELSE
-                OUTPUT 10%
+    ## INPUT _isMember_
+    ## INPUT _payment_
+    ## IF **_isMember_ = TRUE**
+        ## INPUT _timeYear_
+        ## IF **timeYear > 5**
+            ## IF **payment >= 50000**
+                ## OUTPUT *15%*
+            ## ELSE
+                ## OUTPUT *10%*
             END IF
         ELSE
             OUTPUT 5%
